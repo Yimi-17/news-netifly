@@ -1,7 +1,7 @@
 import os
 class Config:
     # Configuraciones generales
-    DEBUG = True  # Modo de depuración activado
+    DEBUG = False  # Modo de depuración activado
     PORT = 5000  # Puerto en el que se ejecuta la aplicación
     HOST = 'localhost'  # Dirección IP local
     SECRET_KEY = os.urandom(24)# Generar una clave secreta aleatoria
