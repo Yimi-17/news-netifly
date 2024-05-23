@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",  // Ruta al archivo principal de tu aplicación Flask
+      "use": "@vercel/python"  // Indica que queremos usar el builder de Python
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ]
+}
