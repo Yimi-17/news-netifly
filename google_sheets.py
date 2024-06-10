@@ -17,7 +17,7 @@ def get_data_from_google_sheets():
     client = connect_to_google_sheets()
     if client:
         try:
-            sheet = client.open('dblosandes').worksheet('MainV2')
+            sheet = client.open('dbnews').worksheet('MainV5')
             data = sheet.get_all_records()
             return data
         except Exception as e:
